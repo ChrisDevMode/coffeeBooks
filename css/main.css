@@ -1,3 +1,9 @@
+:root {
+    --white: #fff;
+
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +15,7 @@
 body {
     font-size: 0.62em;
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(10, 10, 10, 0.459);
 }
 
 
@@ -19,7 +26,7 @@ header {
     display: flex;
     justify-content: center;
 
-    background: radial-gradient(#000000af, #161616e8), url(/media/img/header-bg.jpg);
+    /* background: radial-gradient(#000000af, #161616e8), url(/media/img/header-bg.jpg); */
     background-repeat: no-repeat;
 }
 
@@ -34,6 +41,8 @@ header .wrapper {
 .header__pill {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 /* HEADER ROW--1 */
@@ -50,7 +59,7 @@ header .header__row--1 {
     width: 15rem;
 }
 .header__pill--1 {
-    color: red;
+    color: var(--white);
 }
 
 
@@ -65,22 +74,13 @@ header .header__row--2 {
     flex-basis: 60%;
 }
 
-header .header__row--2 nav ul li > a{
-    text-transform: uppercase;
-}
-
-.header__row--2 nav ul {
-    padding: 2rem;
-    display: flex;
-    gap: 4rem;
-}
 
 
 .header__description {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    
+    flex-basis: 5%;
     width: 30%;
 }
 
@@ -101,10 +101,8 @@ header .header__row--3 {
     flex-basis: 20%;
 }
 
-
 .header__row--3 .icon-arrows-down {
     font-size: 4rem;
-    color: #fff;
 }
     
 
