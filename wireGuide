@@ -1,0 +1,37 @@
+
+BODY  
+
+
+    > - HEADER
+    * wrapper
+        - header__row--1
+            > header__logo
+            > header__pill--1
+
+        - row-2  flex/column
+
+            > header__title
+            > header__nav flex/ column
+                -ul flex/row
+                    * li 
+                        -nav
+                            -ul
+                                li
+                                li
+                                li
+                            -ul
+                        -nav
+
+                    * li
+                    * li
+                    * li
+                -ul
+
+            > header__description
+                -h2
+                -p
+
+        - row-3
+            > header__pill--2
+            > header__icon
+            > header__social-network

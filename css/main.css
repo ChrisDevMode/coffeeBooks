@@ -8,65 +8,111 @@
 
 body {
     font-size: 0.62em;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 /* HEADER ----------------- *h  */
 
 header {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    background: radial-gradient(#000000af, #161616e8), url(/media/img/header-bg.jpg);
+    background-repeat: no-repeat;
 }
 
 header .wrapper {
-    width: 85vw;
+    padding: 2rem;
+    width: 98vw;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__pill {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* HEADER ROW--1 */
+header .header__row--1 {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-basis: 20%;
+}
+
+.header__logo {
+    width: 15rem;
+}
+.header__pill--1 {
+    color: red;
+}
+
+
+/* HEADER ROW--2 */
+header .header__row--2 {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-
-    border: solid 2px black;
+    padding: 2rem;
+    flex-basis: 60%;
 }
 
-header .wrapper .header__main {
+header .header__row--2 nav ul li > a{
+    text-transform: uppercase;
+}
+
+.header__row--2 nav ul {
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.header__description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
+    
+    width: 30%;
+}
+
+.header__description h2 {
+    text-align: center;
+
+}
+
+
+
+
+/* HEADER ROW--3 */
+header .header__row--3 {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+
+
+.header__row--3 .icon-arrows-down {
+    font-size: 4rem;
+    color: #fff;
 }
     
 
-a img.header__arrow-icon {
-    width: 2rem;
-}
-    
 
-header .wrapper img.header__logo {
-    width: 10rem;
-    position: absolute;
-    top: 1rem;
-    left: 2rem;
-}
 
-.pill--1 {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-}
 
-.pill--2 {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-}
 
-.pill--3 {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-}
-    
+
 
 
 
