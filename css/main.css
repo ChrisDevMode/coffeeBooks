@@ -14,6 +14,7 @@
 
 body {
     font-size: 0.62em;
+    line-height: 2;
     font-family: 'Poppins', sans-serif;
     background-color: rgba(10, 10, 10, 0.459);
 }
@@ -26,7 +27,7 @@ header {
     display: flex;
     justify-content: center;
 
-    /* background: radial-gradient(#000000af, #161616e8), url(/media/img/header-bg.jpg); */
+    background: radial-gradient(#000000af, #161616e8), url(/media/img/header-bg.jpg);
     background-repeat: no-repeat;
 }
 
@@ -63,31 +64,102 @@ header .header__row--1 {
 }
 
 
-/* HEADER ROW--2 */
+
+
+/* HEADER ROW--2   */
 header .header__row--2 {
+    flex-basis: 50%;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     padding: 2rem;
-    flex-basis: 60%;
+}
+
+/* title */
+.header__row--2 h1 {
+    flex-basis: 10%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--white);
+    text-shadow: 0 0 4px;
+}
+
+   
+/* navigation  *n  */
+.nav-main {
+    flex-basis: 30%;
+}
+.nav-main__list {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-main__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ 
+.nav-main__link {
+    font-size: .8rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: 0 0 2px;
+}
+
+.nav-main__item:hover > .nav-sub__list {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+    
+.nav-sub__list {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    transition: opacity .8s ease;
+}
+
+.nav-sub__item {
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px var(--white);
+}
+    
+
+.nav-sub__link {
+    color: var(--white);
+    text-transform: capitalize;
 }
 
 
-
+/* Description *des */
 .header__description {
+    flex-basis: 10%;
+
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    flex-basis: 5%;
     width: 30%;
 }
 
 .header__description h2 {
     text-align: center;
-
+    color: var(--white);
+    text-transform: uppercase;
 }
+
+.header__description p {
+    color: var(--white);
+}
+    
 
 
 
@@ -101,15 +173,9 @@ header .header__row--3 {
     flex-basis: 20%;
 }
 
-.header__row--3 .icon-arrows-down {
-    font-size: 4rem;
+.header__social-network {
+    color: blue;
 }
-    
-
-
-
-
-
 
 
 
