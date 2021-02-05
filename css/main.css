@@ -27,8 +27,10 @@ header {
     display: flex;
     justify-content: center;
 
-    background: radial-gradient(#04425ad2, #000000e8), url(/media/img/header-bg.jpg);
+    background-image: radial-gradient(#04425ad2, #000000e8), url(/media/img/header-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 header .wrapper {
